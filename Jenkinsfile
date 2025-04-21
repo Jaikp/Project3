@@ -1,16 +1,6 @@
 pipeline {
     agent any
 
-    tools {
-        // Make sure Gradle is installed in Jenkins and named 'gradle'
-        gradle 'gradle'
-        jdk 'jdk-17' // or whatever JDK version your Jenkins uses
-    }
-
-    environment {
-        // Set any custom environment variables if needed
-    }
-
     stages {
         stage('Checkout') {
             steps {
